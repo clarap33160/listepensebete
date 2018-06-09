@@ -1,0 +1,6 @@
+<div class="container shadow bg-white rounded p-4 text-center my-5 mb-4">
+    <h1><%= @activity.name %></h1>
+      <p><%= @activity.content %></p>
+          <%= link_to "Supprimer", activity_path(@activity.id), method: :delete, class: "btn btn-danger" %>
+          <%= link_to "Modifier", edit_activity_path(@activity.id), class: "btn btn-primary" %>
+</div>

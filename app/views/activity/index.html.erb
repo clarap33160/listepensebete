@@ -1,0 +1,18 @@
+<div class="text-center">
+<h1>Liste des activités</h1>
+</div>
+<div class="container">
+<div class="row">
+<% @activities.each do |activity| %>
+<div class="col-12">
+<div class="shadow bg-white rounded p-4 d-flex justify-content-between">
+<h2><%= activity.name %></h2>
+<p><b><%= activity.content %></b></p>
+
+</div>
+</div>
+<% end %>
+<%=link_to "editer acti", edit_activity_path(@activity.id) %>
+
+</div>
+</div>
